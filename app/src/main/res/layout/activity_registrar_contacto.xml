@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agregar_contacto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarContacto">
+
+    <include layout="@layout/header" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar Nuevo Contacto"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del contacto:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/et_nombre_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:inputType="text"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/borde" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo del contacto:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/et_correo_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/borde" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/celeste"
+            android:text="Volver"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/celeste"
+            android:text="Limpiar"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAgregarContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/celeste"
+            android:text="Agregar"
+            android:textSize="15dp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

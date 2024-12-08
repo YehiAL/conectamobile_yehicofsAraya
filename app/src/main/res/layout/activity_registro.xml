@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registro"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Registro">
+
+    <include layout="@layout/header" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_usuario_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:inputType="text"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/borde"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_correo_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:inputType="text"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/borde"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_contra_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:inputType="text"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/borde"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar contraseña:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_confirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="25dp"
+        android:inputType="text"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:background="@drawable/borde"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/celeste"
+            android:text="Volver"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/celeste"
+            android:text="Limpiar"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/celeste"
+            android:text="Registrar"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+</LinearLayout>
