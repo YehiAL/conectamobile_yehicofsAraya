@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="celeste">#00b8ff</color>
+    <color name="gris">#AAAAAA</color>
+    <color name="transparente_prueba">#00FFFF80</color>
 </resources>
