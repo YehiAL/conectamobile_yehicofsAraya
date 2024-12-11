@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    >
+
+    <include layout="@layout/header"/>
 
     <TextView
         android:id="@+id/tv_titulo_contactos"
@@ -14,7 +16,13 @@
         android:textStyle="bold"
         android:gravity="center"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="16dp" />
+        android:padding="10dp" />
+
+    <SearchView
+        android:id="@+id/svBuscarContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Buscar contacto..." />
 
     <ListView
         android:id="@+id/lv_contactos"
