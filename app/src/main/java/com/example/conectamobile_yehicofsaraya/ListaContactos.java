@@ -34,6 +34,7 @@ public class ListaContactos extends AppCompatActivity {
         lvContactos = findViewById(R.id.lv_contactos);
         svBuscarContacto = findViewById(R.id.svBuscarContacto);
         Button btnAgregarContacto = findViewById(R.id.btn_agregar_contacto);
+        Button btnVolver = findViewById(R.id.btn_volver);
 
         // Inicializar el la logica de contactos de firebase
         firebaseHelper = new FirebaseContacto();
@@ -53,6 +54,13 @@ public class ListaContactos extends AppCompatActivity {
                 //redirige a el activity para registrar contactos
                 Intent intent = new Intent(ListaContactos.this, RegistrarContacto.class);
                 startActivity(intent);
+            }
+        });
+        //evento del boton volver
+        btnVolver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
