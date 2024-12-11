@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     >
 
     <include layout="@layout/header"/>
@@ -39,6 +40,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Agregar Contacto"
+        android:backgroundTint="@color/celeste"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/btn_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volver"
         android:backgroundTint="@color/celeste"
         android:textColor="@color/white"
         android:layout_marginTop="16dp" />
